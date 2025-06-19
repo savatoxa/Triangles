@@ -1,10 +1,10 @@
-class Point2D(val x: Int, val y: Int) {
+data class Point2D(val x: Int, val y: Int) {
     fun printPoint(){
         println("x: $x, y: $y")
     }
 }
 
-class Triangle(val A: Point2D, val B: Point2D, val C: Point2D) {
+data class Triangle(val A: Point2D, val B: Point2D, val C: Point2D) {
     fun printTriangle(){
         println("A:  x: ${A.x} y: ${A.y}")
         println("B:  x: ${B.x} y: ${B.y}")

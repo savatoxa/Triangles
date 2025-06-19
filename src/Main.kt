@@ -8,5 +8,7 @@ fun main() {
 
     val canvas = DrawTriangle.drawCanvas(width, height)
     File(fileName).writeText(canvas)
+    val newtriangle = DivideTriangles.divideTriangle(triangleABC)
     DrawTriangle.drawTriangle(triangleABC, fileName)
+    DrawTriangle.drawTriangle(newtriangle, fileName)
 }
